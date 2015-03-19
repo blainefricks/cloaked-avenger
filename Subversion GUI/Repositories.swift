@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Sidebar: NSViewController {
+class Repositories: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

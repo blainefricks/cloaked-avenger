@@ -11,11 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="521" height="381"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <customView fixedFrame="YES" id="cuQ-2N-TYX" userLabel="Sidebar">
+                <customView fixedFrame="YES" id="cuQ-2N-TYX" userLabel="Repository Browser">
                     <rect key="frame" x="0.0" y="0.0" width="172" height="381"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </customView>
-                <customView fixedFrame="YES" id="DZu-Zw-xWD" userLabel="Views">
+                <customView fixedFrame="YES" id="DZu-Zw-xWD" userLabel="Repository View">
                     <rect key="frame" x="173" y="0.0" width="348" height="381"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </customView>
