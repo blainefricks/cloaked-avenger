@@ -327,25 +327,13 @@
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
                         <items>
                             <menuItem title="Refresh" keyEquivalent="r" id="iEn-R9-rcn"/>
-                            <menuItem isSeparatorItem="YES" id="7ou-oD-Bia"/>
-                            <menuItem title="Hide Sidebar" keyEquivalent="K" id="snW-S8-Cw5">
-                                <connections>
-                                    <action selector="toggleToolbarShown:" target="-1" id="BXY-wc-z0C"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Show Command Output" keyEquivalent="W" id="1UK-8n-QPP">
-                                <connections>
-                                    <action selector="runToolbarCustomizationPalette:" target="-1" id="pQI-g3-MTW"/>
-                                </connections>
-                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="Tjd-sR-ZA4"/>
-                            <menuItem title="File Status View" keyEquivalent="1" id="We0-fR-yss"/>
-                            <menuItem title="Log View" keyEquivalent="2" id="eve-NE-W9R"/>
-                            <menuItem title="Search View" keyEquivalent="3" id="b4J-It-J49"/>
-                            <menuItem isSeparatorItem="YES" id="nxW-xY-3F3"/>
-                            <menuItem title="Enter Full Screen" keyEquivalent="f" id="PJM-Nq-McR">
-                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                            </menuItem>
+                            <menuItem title="Changes" keyEquivalent="1" id="We0-fR-yss"/>
+                            <menuItem title="History" keyEquivalent="2" id="eve-NE-W9R"/>
+                            <menuItem title="Branches" keyEquivalent="3" id="b4J-It-J49"/>
+                            <menuItem isSeparatorItem="YES" id="PWT-GO-mTN"/>
+                            <menuItem title="Show Repository List" keyEquivalent="R" id="1Ee-jC-NVu"/>
+                            <menuItem title="Hide Repository List" hidden="YES" keyEquivalent="R" id="8fA-jQ-eqS"/>
                         </items>
                     </menu>
                 </menuItem>
@@ -455,9 +443,10 @@ CA
                                     <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Enter Full Screen" keyEquivalent="f" id="PJM-Nq-McR">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
-                            <menuItem title="Show Repository Browser" keyEquivalent="b" id="Li2-s2-zqm"/>
-                            <menuItem isSeparatorItem="YES" id="of1-gH-gqu"/>
                             <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -491,7 +480,7 @@ CA
                 <rect key="frame" x="0.0" y="0.0" width="800" height="460"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="C9C7E634-89C2-4355-A8C5-F951C705F977" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="Dik-jV-4ET">
+            <toolbar key="toolbar" implicitIdentifier="C9C7E634-89C2-4355-A8C5-F951C705F977" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="Dik-jV-4ET">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="w9z-xc-ZhS"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="wrh-Qk-Gls"/>
