@@ -1,14 +1,14 @@
 //
-//  Sidebar.swift
+//  HistoryViewController.swift
 //  Subversion GUI
 //
-//  Created by Blaine Fricks on 3/19/15.
+//  Created by Blaine Fricks on 3/20/15.
 //  Copyright (c) 2015 Blaine Fricks. All rights reserved.
 //
 
 import Cocoa
 
-class Repositories: NSViewController {
+class HistoryViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

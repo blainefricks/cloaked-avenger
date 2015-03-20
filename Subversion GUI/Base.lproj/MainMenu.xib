@@ -482,7 +482,7 @@ CA
             </items>
         </menu>
         <window title="Subversion GUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="800" height="460"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
@@ -491,6 +491,34 @@ CA
                 <rect key="frame" x="0.0" y="0.0" width="800" height="460"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="C9C7E634-89C2-4355-A8C5-F951C705F977" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="Dik-jV-4ET">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="w9z-xc-ZhS"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="wrh-Qk-Gls"/>
+                    <toolbarItem implicitItemIdentifier="AC6B3460-26B5-4179-AF85-0AD672C3BE92" label="Custom View" paletteLabel="Custom View" id="WFZ-CJ-v0u">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="100" height="28"/>
+                        <size key="maxSize" width="222" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="6lH-Oh-sOD">
+                            <rect key="frame" x="0.0" y="14" width="222" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectOne" id="h8D-pl-0IH">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="Changes"/>
+                                    <segment label="History" selected="YES" tag="1"/>
+                                    <segment label="Branches"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="wrh-Qk-Gls"/>
+                    <toolbarItem reference="WFZ-CJ-v0u"/>
+                    <toolbarItem reference="wrh-Qk-Gls"/>
+                </defaultToolbarItems>
+            </toolbar>
             <point key="canvasLocation" x="493.5" y="471"/>
         </window>
     </objects>
