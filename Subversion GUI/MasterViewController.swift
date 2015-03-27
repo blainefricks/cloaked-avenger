@@ -11,8 +11,10 @@ import AppKit
 
 class MasterViewController: NSViewController {
 
+  // SplitView Container
+  @IBOutlet weak var masterSplitView: NSSplitView!
+  
   // Views in Split View
-  @IBOutlet weak var splitView: NSSplitView!
   @IBOutlet weak var sidebarView: NSView!
   
   var sidebarViewController: SidebarViewController!
@@ -21,10 +23,10 @@ class MasterViewController: NSViewController {
     super.viewDidLoad()
     // Do view setup here.
 
-    // Set Min, Max and Initial of NSSplitView Divider
-    splitView.setPosition(150, ofDividerAtIndex: 0)
-    splitView.maxPossiblePositionOfDividerAtIndex(200)
-    splitView.minPossiblePositionOfDividerAtIndex(50)
+    // Set Initial, Min and Max Positions of NSSplitView Divider 0
+    masterSplitView.setPosition(150, ofDividerAtIndex: 0)
+//    NSSplitViewController().splitView(masterSplitView, constrainMinCoordinate: 50, ofSubviewAt: 0)
+//    NSSplitViewController().splitView(masterSplitView, constrainMaxCoordinate: 200, ofSubviewAt: 0)
     
     // Connect sidebar to sidebarViewController
     sidebarViewController = SidebarViewController(nibName: "SidebarViewController", bundle: nil)

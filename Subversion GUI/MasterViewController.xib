@@ -6,9 +6,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="Subversion_GUI" customModuleProvider="target">
             <connections>
+                <outlet property="masterSplitView" destination="l7k-ub-Xfk" id="0gu-QE-sBf"/>
                 <outlet property="sidebarView" destination="C4D-Cc-pnS" id="BCJ-bN-bOb"/>
-                <outlet property="splitView" destination="l7k-ub-Xfk" id="TwK-tG-ovH"/>
-                <outlet property="view" destination="l7k-ub-Xfk" id="Hz3-cJ-ddL"/>
+                <outlet property="view" destination="l7k-ub-Xfk" id="1vr-2Z-BW3"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -18,12 +18,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <customView id="C4D-Cc-pnS" userLabel="sidebarView">
-                    <rect key="frame" x="0.0" y="0.0" width="294" height="321"/>
+                    <rect key="frame" x="0.0" y="0.0" width="296" height="321"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                     <animations/>
                 </customView>
                 <customView id="b9w-tE-VGY">
-                    <rect key="frame" x="295" y="0.0" width="295" height="321"/>
+                    <rect key="frame" x="297" y="0.0" width="293" height="321"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                 </customView>
             </subviews>
