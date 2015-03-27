@@ -13,6 +13,9 @@ class MasterViewController: NSViewController {
 
   // Views in Split View
   @IBOutlet weak var splitView: NSSplitView!
+  @IBOutlet weak var sidebarView: NSView!
+  
+  var sidebarViewController: SidebarViewController!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +26,9 @@ class MasterViewController: NSViewController {
     splitView.maxPossiblePositionOfDividerAtIndex(200)
     splitView.minPossiblePositionOfDividerAtIndex(50)
     
+    // Connect sidebar to sidebarViewController
+    sidebarViewController = SidebarViewController(nibName: "SidebarViewController", bundle: nil)
+    sidebarView.addSubview(sidebarViewController.view)
   }
   
     
