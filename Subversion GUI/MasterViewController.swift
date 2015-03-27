@@ -9,19 +9,20 @@
 import Cocoa
 import AppKit
 
-class MasterViewController: NSSplitViewController {
+class MasterViewController: NSViewController {
 
-//  dont need this because it is already declared under NSSplitViewController
-//  var splitView: NSSplitView!
+  // Views in Split View
+  @IBOutlet weak var splitView: NSSplitView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do view setup here.
 
-    // Set Min, Max and Initial 
-    splitView.minPossiblePositionOfDividerAtIndex(0)
+    // Set Min, Max and Initial of NSSplitView Divider
+    splitView.setPosition(150, ofDividerAtIndex: 0)
     splitView.maxPossiblePositionOfDividerAtIndex(200)
-    splitView.setPosition(50, ofDividerAtIndex: 100)
+    splitView.minPossiblePositionOfDividerAtIndex(50)
+    
   }
   
     
